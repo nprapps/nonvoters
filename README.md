@@ -32,7 +32,7 @@ in2csv --no-inference --skip-lines 4 Education.xls > Education.csv
 # Need to use column indices instead of names, due to string parsing issues
 csvcut --columns 1,2,44,47 Education.csv > Education-cut.csv
 ```
-- foo
+- county-level 2016 presidential election results
 ```bash
 wget "https://api.ap.org/v2/elections/2016-11-08?level=fipscode&format=json&officeID=P&apikey=${AP_API_KEY}" \
 	--output-document ap_2016_presidential.json
